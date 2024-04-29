@@ -31,3 +31,33 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+//Worked Directly With Aaron Krapes in person
+
+$$ T(n) =
+   \begin{cases}
+       1 & n \leq 1\\
+       3T(\frac{n}{3}) + n^5 & n > 1
+   \end{cases}
+$$
+
+$T(n) = 3T(\frac{n}{3}) + n^5 $
+
+$= 3(3T(\frac{n}{9}) + \frac{n^5}{3^5}) + n^5$
+
+$= 9T(\frac{n}{9}) + \frac{n^5}{3^4} + n^5$
+
+$= 27T(\frac{n}{27}) + \frac{n^5}{9^4} + \frac{n^5}{3^4} + n^5$
+
+$= 27T(\frac{n}{27}) + \frac{n^5}{3^8} + \frac{n^5}{3^4} + n^5$
+
+$…$
+
+$= 3^iT(\frac{n}{3^i}) +$
+$\sum_{k=0}^i (\frac{1}{3^4})^k$
+$\cdot n^5 $
+
+for $i = \log n$
+
+$=  nT(1) + n^6 \in \Theta(n^6)$
+
