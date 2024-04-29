@@ -57,7 +57,7 @@ $= 3^iT(\frac{n}{3^i}) +$
 $\sum_{k=0}^i (\frac{1}{3^4})^k$
 $\cdot n^5 $
 
-for $i = \log n$ 
+for $i = \log n$
 
 $=  nT(1) + n^6 \in \Theta(n^6)$
 
